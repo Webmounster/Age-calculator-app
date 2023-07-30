@@ -1,0 +1,19 @@
+@use 'variables';
+
+.calcule {
+    font-size: 3.3rem;
+    // font-weight: 800;
+    font-family: variables.$font-extraBI;
+    color: variables.$Purple;
+    // margin-top: 25px;
+    line-height: 3.5rem;
+
+    @media #{variables.$dektop} {
+        font-size: 3.3rem * 2;
+        line-height: 3.5rem * 2;
+    }
+
+    &__text {
+        color: variables.$OffBlack;
+    }
+}

@@ -1,0 +1,78 @@
+@use 'variables';
+@use 'mixins';
+.form {
+    // background-color: variables.$LightGrey;
+    // border: 1px solid;
+    border-bottom: 2px solid variables.$LightGrey;
+    height: 136px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 70px;
+
+    @media #{variables.$dektop} {
+        height: 145px;
+        justify-content: left;
+        gap: 35px;
+    }
+
+    &__div {
+        @include mixins.div;
+    }
+
+    &__label {
+        @include mixins.label;
+    }
+
+    &__input {
+        @include mixins.input;
+
+        &:invalid {
+            border-color: variables.$LightRed;
+        }
+    }
+
+    &__error {
+        @include mixins.error;
+    }
+
+    &__submit {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        bottom: -35px;
+        background-color: variables.$Purple;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+
+        @media #{variables.$dektop} {
+            width: 90px;
+            height: 90px;
+            bottom: -45px;
+            right: 0;
+        }
+
+        .btn__submit {
+            background: none;
+            border: none;
+            margin: 0;
+            padding: 0;
+            cursor: pointer;
+
+            img {
+                width: 25px;
+                height: 25px;
+
+                @media #{variables.$dektop} {
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+        }
+
+        &:hover {
+            background-color: variables.$OffBlack;
+        }
+    }
+}

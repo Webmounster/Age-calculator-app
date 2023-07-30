@@ -1,0 +1,194 @@
+@font-face {
+  font-family: poppinsItalic;
+  src: url(../assets/fonts/Poppins-Italic.ttf);
+}
+@font-face {
+  font-family: poppinsBold;
+  src: url(../assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: poppinsExtraBoldI;
+  src: url(../assets/fonts/Poppins-ExtraBoldItalic.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 86%);
+  font-size: 16px;
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  width: 344px;
+  height: 487px;
+  margin: 87px auto;
+  padding: 52px 23px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 28px 28px 100px 28px;
+}
+@media only screen and (min-width:1200px) {
+  .container {
+    width: 841px;
+    height: 655px;
+    margin: 150px auto;
+    padding: 52px 58px;
+    border-radius: 28px 28px 200px 28px;
+  }
+}
+
+.happybirthday {
+  width: 275px;
+  position: absolute;
+  bottom: -250px;
+  right: 0;
+  opacity: 1;
+  filter: drop-shadow(5px 5px 5px #000);
+}
+@media only screen and (min-width:1200px) {
+  .happybirthday {
+    width: 412.5px;
+  }
+}
+
+@keyframes happy {
+  0% {
+    bottom: -250px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+.form {
+  border-bottom: 2px solid hsl(0, 0%, 86%);
+  height: 136px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 70px;
+}
+@media only screen and (min-width:1200px) {
+  .form {
+    height: 145px;
+    justify-content: left;
+    gap: 35px;
+  }
+}
+.form__div {
+  width: 88px;
+  height: 72px;
+}
+@media only screen and (min-width:1200px) {
+  .form__div {
+    width: 159px;
+    height: 72px;
+  }
+}
+.form__label {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  font-family: poppinsBold;
+  color: hsl(0, 1%, 44%);
+  font-size: 0.7rem;
+}
+@media only screen and (min-width:1200px) {
+  .form__label {
+    font-size: 1.05rem;
+  }
+}
+.form__input {
+  width: 85px;
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid hsl(0, 0%, 86%);
+  font-size: 1.2rem;
+  padding-left: 10px;
+  font-family: poppinsBold;
+  margin-bottom: 5px;
+  outline: none;
+  cursor: pointer;
+}
+@media only screen and (min-width:1200px) {
+  .form__input {
+    width: 158px;
+    height: 70px;
+    font-size: 1.8rem;
+    padding-left: 20px;
+  }
+}
+.form__input:invalid {
+  border-color: hsl(0, 100%, 67%);
+}
+.form__error {
+  color: hsl(0, 100%, 67%);
+  font-family: poppinsItalic;
+  font-size: 0.5rem;
+  display: none;
+}
+@media only screen and (min-width:1200px) {
+  .form__error {
+    font-size: 0.75rem;
+  }
+}
+.form__submit {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  bottom: -35px;
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (min-width:1200px) {
+  .form__submit {
+    width: 90px;
+    height: 90px;
+    bottom: -45px;
+    right: 0;
+  }
+}
+.form__submit .btn__submit {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.form__submit .btn__submit img {
+  width: 25px;
+  height: 25px;
+}
+@media only screen and (min-width:1200px) {
+  .form__submit .btn__submit img {
+    width: 45px;
+    height: 45px;
+  }
+}
+.form__submit:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+
+.calcule {
+  font-size: 3.3rem;
+  font-family: poppinsExtraBoldI;
+  color: hsl(259, 100%, 65%);
+  line-height: 3.5rem;
+}
+@media only screen and (min-width:1200px) {
+  .calcule {
+    font-size: 6.6rem;
+    line-height: 7rem;
+  }
+}
+.calcule__text {
+  color: hsl(0, 0%, 8%);
+}/*# sourceMappingURL=styles.css.map */

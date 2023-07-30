@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+<!-- .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} -->
+
+<body>
+
+  <div class="container">
+    <section>
+      <img class="happybirthday" src="./assets/images/it copia.png" alt="">
+    </section>
+    <section>
+      <form class="form" action="#" method="post">
+
+        <div class="form__div form__day">
+          <label class="form__label form__label-day">Day</label>
+          <input class="form__input form__input-day" type="text" pattern="[0-9]{1,2}" name="day" id="day"
+            placeholder="DD">
+          <p class="form__error form__error-day"></p>
+        </div>
+
+        <div class="form__div form__month">
+          <label class="form__label form__label-month">Month</label>
+          <input class="form__input form__input-month" type="text" pattern="[0-9]{1,2}" name="month" id="month"
+            placeholder="MM">
+          <p class="form__error form__error-month"></p>
+        </div>
+
+        <div class="form__div form__year">
+          <label class="form__label form__label-year">Year</label>
+          <input class="form__input form__input-year" type="text" pattern="[0-9]{4}" name="year" id="year"
+            placeholder="YYYY">
+          <p class="form__error form__error-year"></p>
+        </div>
+
+        <div class="form__submit">
+          <button class="btn__submit" type="submit"><img src="./assets/images/icon-arrow.svg" alt=""></button>
+        </div>
+      </form>
+    </section>
+
+    <section>
+      <div class="calcule">
+        <p class="calcule__years">
+          <span class="calcule__years--number"> --</span> <span class="calcule__text">years</span>
+        </p>
+        <p class="calcule__months"> <span class="calcule__months--number"> --</span> <span
+            class="calcule__text">months</span></p>
+        <p class="calcule__days"> <span class="calcule__days--number"> --</span> <span class="calcule__text">days</span>
+        </p>
+      </div>
+    </section>
+  </div>
+  <!-- <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Webmounster</a>.
+    </div>
+  </footer> -->
+
+
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

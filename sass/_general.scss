@@ -1,0 +1,63 @@
+@use 'variables';
+@use 'mixins';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: variables.$LightGrey;
+    font-size: 16px;
+    // @include mixins.texto(variables.$font-italic, variables.$OffBlack);
+}
+
+.container {
+    background-color: variables.$White;
+    width: 344px;
+    height: 487px;
+    margin: 87px auto;
+    padding: 52px 23px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 28px 28px 100px 28px;
+
+    @media #{variables.$dektop} {
+        width: 841px;
+        height: 655px;
+        margin: 150px auto;
+        padding: 52px 58px;
+        border-radius: 28px 28px 200px 28px;
+    }
+}
+
+.happybirthday {
+    width: 275px;
+    position: absolute;
+    bottom: -250px;
+    right: 0;
+    opacity: 1;
+    filter: drop-shadow(5px 5px 5px #000);
+    // animation-name: happy;
+    // animation-duration: 0s;
+    // animation-fill-mode: backwards;
+    // animation-timing-function: ease;
+    // animation: happy 1s 0s forwards ease-out;
+
+    @media #{variables.$dektop} {
+        width: 275px * 1.5;
+    }
+}
+
+@keyframes happy {
+    0% {
+        // transform: translateY(-250px);
+        bottom: -250px;
+    }
+    100% {
+        // transform: translateY(0px);
+        bottom: 0px;
+    }
+}
